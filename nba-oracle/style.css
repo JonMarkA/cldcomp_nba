@@ -1,0 +1,72 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #c8102e;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { font-size: 28px; font-weight: bold; }
+.tagline { font-size: 14px; opacity: 0.8; }
+
+.section-title {
+  text-align: center;
+  padding: 30px;
+  font-size: 22px;
+  color: #c8102e;
+}
+
+#predictions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.team-card {
+  background-color: #16213e;
+  border: 1px solid #c8102e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.team-card h3 { font-size: 18px; margin-bottom: 10px; }
+
+.probability {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00d4aa;
+}
+
+.prob-label { font-size: 12px; opacity: 0.7; margin-top: 4px; }
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.likely { background-color: #00d4aa; color: #000; }
+.unlikely { background-color: #555; color: #fff; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.5;
+}

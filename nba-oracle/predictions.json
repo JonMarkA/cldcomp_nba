@@ -1,0 +1,14 @@
+{
+  "teams": [
+    { "name": "Boston Celtics", "playoff_probability": 0.95 },
+    { "name": "Oklahoma City Thunder", "playoff_probability": 0.92 },
+    { "name": "Cleveland Cavaliers", "playoff_probability": 0.89 },
+    { "name": "Denver Nuggets", "playoff_probability": 0.81 },
+    { "name": "Minnesota Timberwolves", "playoff_probability": 0.76 },
+    { "name": "New York Knicks", "playoff_probability": 0.72 },
+    { "name": "Golden State Warriors", "playoff_probability": 0.48 },
+    { "name": "Chicago Bulls", "playoff_probability": 0.31 },
+    { "name": "Portland Trail Blazers", "playoff_probability": 0.18 },
+    { "name": "Detroit Pistons", "playoff_probability": 0.09 }
+  ]
+}
