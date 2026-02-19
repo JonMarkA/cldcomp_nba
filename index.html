@@ -7,23 +7,65 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header>
-    <div class="navbar">
-      <h1 class="logo">🏀 NBA Playoff Oracle</h1>
-      <p class="tagline">Powered by Azure Machine Learning</p>
-    </div>
+    <nav class="navbar">
+      <div class="nav-logo">🏀 NBA Playoff Oracle</div>
+      <ul class="nav-links">
+        <li><a href="https://www.nba.com/games" target="_blank">Games</a></li>
+        <li><a href="https://www.nba.com/schedule" target="_blank">Schedule</a></li>
+        <li><a href="https://www.nba.com/players" target="_blank">Players</a></li>
+        <li><a href="https://www.nba.com/stats" target="_blank">Stats</a></li>
+        <li><a href="https://www.nba.com/news" target="_blank">News</a></li>
+        <li><a href="#predictions" class="nav-active">Playoff Probability</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h2 class="section-title">2024–25 Playoff Probability Predictions</h2>
-    <p id="last-updated" class="last-updated"></p>
-    <div id="predictions-container">
-      <p style="text-align:center;">Loading predictions...</p>
-    </div>
-  </main>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>2024–25 NBA Playoff Probabilities</h1>
+    <p>Powered by Azure Machine Learning</p>
+  </section>
 
+  <!-- PREDICTIONS TABLE -->
+  <section class="predictions-section" id="predictions">
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" onclick="filterTeams('all')">All Teams</button>
+      <button class="tab" onclick="filterTeams('East')">Eastern Conference</button>
+      <button class="tab" onclick="filterTeams('West')">Western Conference</button>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrapper">
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Conference</th>
+            <th>Record</th>
+            <th>Win %</th>
+            <th>Playoff Probability</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr><td colspan="7" style="text-align:center; padding:30px;">Loading predictions...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="last-updated" id="last-updated"></p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Global Sports Insights © 2025 | Built on Microsoft Azure</p>
+    <p>© 2026 Global Sports Insights | Built on Microsoft Azure</p>
+    <p class="disclaimer">Disclaimer: This is a student project for educational purposes.</p>
   </footer>
 
   <script src="app.js"></script>
