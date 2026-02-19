@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-19",
+  "last_updated": "2026-02-19",
   "source": "NBA Live Standings",
   "teams": [
     { "name": "Oklahoma City Thunder", "conference": "West", "wins": 42, "losses": 14, "win_pct": 0.750, "playoff_probability": 0.99 },
